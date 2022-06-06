@@ -46,7 +46,7 @@ def import_from_bear() -> List[Prompt]:
 
     showInfo(
         f"Imported {len(new_prompts)} new prompts from Bear in {elapsed:.1f}s. " +
-        f"Topics: {''.join(set(p.context for p in new_prompts))}")
+        f"Topics: {', '.join(set(p.context for p in new_prompts))}")
 
     return new_prompts
 
